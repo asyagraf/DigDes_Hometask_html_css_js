@@ -1,0 +1,132 @@
+<!doctype HTML>
+<html lang="ru">
+  <head>
+    <meta charset = "utf-8">
+	<title>Любимый музей</title>
+	<style>
+	    .mysite{
+			display: flex;
+			flex-direction: column;
+			background-color: #E0FFFF;
+		}	
+	    .content{
+			display: flex;
+			flex-direction: row;	
+	    }
+	    .column{
+			flex: 1;
+			padding: 0.5%;
+		}
+		.column h4 {
+			text-align: center;
+		}
+		.column p{
+			text-align: center;
+			width: 80%;
+			padding-left: 10%;
+		}
+		footer {
+			background-color: #bf8283;
+			display: inline-block;
+			padding-top: 1%;
+			border-top: 10px solid #efdecd;
+			width: 100%;
+			height: 5%;	
+			font-family: Candara, "Times New Roman";
+			font-style: italic;
+		}
+		footer p{
+			padding-left: 1%;
+			width: 50%;
+		}
+		header {
+			display: inline-block;
+			width: 100%;
+			height: 5%;
+			text-align:center;
+			background-color: #bf8283;
+			border-bottom: 10px solid #efdecd;
+			font-family: Candara, "Times New Roman";
+			font-size: large;
+		}
+		img {
+			width: 90%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		p {
+			font-family: Candara, "Times New Roman";
+			font-size: medium;
+		}
+		ul {
+			width: 90%;
+			padding-left: 5%;
+		}
+		a {
+			font-family: Candara, "Times New Roman";
+			font-size: medium;
+			text-decoration: none;
+			color: #1f0e11;
+		}
+		a:hover {
+			color: #8a0428;
+		}
+		form {
+		width: 90%;
+		padding: 2.5%;
+		}
+		textarea, select {
+		width: 100%;
+		}
+	</style>
+  </head>
+  <body>
+    <div class="mysite">
+	  <header>
+	    <h1>Мой любимый музей - Мультимедиа Арт Музей</h1>
+	  </header>
+	  <div class="content">
+	    <div class="column">
+		  <img src="https://kudamoscow.ru/uploads/340a779def6e92f64e501a04dc16d324.jpg" alt="Мультимедиа Арт Музей (Москва)">
+		  <h4>Описание</h4>
+		  <p>Крупнейший российский музей фотографии и мультимедийного искусства. Ежегодно представляет более ста выставочных проектов в России и за рубежом.</p>
+		  <h4>Адрес</h4>
+		  <p>119034, Москва, ул. Остоженка, д. 16</p>
+		  <h4>Часы работы</h4>
+		  <p>12:00–21:00<br>(касса работает до 20:30)<br>ежедневно, кроме понедельника</p>
+		</div>
+		<div class="column">
+		  <h4>Текущие выставки</h4>
+		  <ul>
+			<li><a href="https://mamm-mdf.ru/exhibitions/blokada-leningrada-1941-1943-iz-sobraniya-multimedia-art-muzeya-moskva/" target="_blank">БЛОКАДА ЛЕНИНГРАДА. 1941-1943.</a></li>
+			<li><a href="https://mamm-mdf.ru/exhibitions/starinnaya-yaponskaya-fotografiya/" target="_blank">СТАРИННАЯ ЯПОНСКАЯ ФОТОГРАФИЯ</a></li>
+			<li><a href="https://mamm-mdf.ru/exhibitions/blestyaschaya-epoha-italyanskaya-moda-80-h/" target="_blank">БЛЕСТЯЩАЯ ЭПОХА. ИТАЛЬЯНСКАЯ МОДА 80-Х</a></li>
+			<li><a href="https://mamm-mdf.ru/exhibitions/costume-ball-at-the-winter-palace/" target="_blank">КОСТЮМИРОВАННЫЙ БАЛ В ЗИМНЕМ ДВОРЦЕ. 1903 Г.</a></li>
+		  </ul>
+		</div>
+		<fieldset class="column">	
+		  <form enctype="multipart/form-data" method="post" action="http://localhost/addanswer">
+		    <p>На какую выставку хотели бы сходить?</p>
+			<select id="subject" name="subject">
+			  <option value="БЛОКАДА ЛЕНИНГРАДА">БЛОКАДА ЛЕНИНГРАДА</option>
+			  <option value="СТАРИННАЯ ЯПОНСКАЯ ФОТОГРАФИЯ">СТАРИННАЯ ЯПОНСКАЯ ФОТОГРАФИЯ</option>
+			  <option value="БЛЕСТЯЩАЯ ЭПОХА. ИТАЛЬЯНСКАЯ МОДА 80-Х">БЛЕСТЯЩАЯ ЭПОХА. ИТАЛЬЯНСКАЯ МОДА 80-Х</option>
+			  <option value="КОСТЮМИРОВАННЫЙ БАЛ В ЗИМНЕМ ДВОРЦЕ">КОСТЮМИРОВАННЫЙ БАЛ В ЗИМНЕМ ДВОРЦЕ</option>					
+			</select>
+			<p>Какие у Вас ожидания от выставки?</p>
+			<textarea rows="20" placeholder="Введите текст" maxlength="2000"></textarea>
+			<p>
+			  <input type="submit" value="Отправить">
+			</p>
+		  </form>
+		</fieldset>
+	  </div>
+	  <footer>
+	    <p>Автор: Графская А.Д.</p>
+		<p>Выполнено в рамках домашнего задания. </p>
+		<p>2022 ©</p>
+	  </footer>
+    </div>
+  </body>
+</html>
